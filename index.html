@@ -1,0 +1,619 @@
+<!DOCTYPE html> html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Richland Crop Science | Agriculture Inputs & Bio Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Richland Crop Science - Agriculture inputs, Harbhara seeds, bio fertilizers, bio pesticides and farm products at Kinkheda, Post Linga Kothval, Tal. Risod, Dist. Washim.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f7f3;
+            color: #223322;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            background: #1b5e20;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+        }
+
+        .top-bar span {
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.7rem 0;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #c5e1a5;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a {
+            padding: 0.3rem 0.7rem;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-primary {
+            background: #ffca28;
+            color: #3e2723;
+            padding: 0.4rem 0.9rem;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            filter: brightness(0.95);
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            color: #fff;
+            padding: 3rem 0 3.5rem;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-text {
+            flex: 1 1 280px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            margin-bottom: 1rem;
+            max-width: 550px;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 999px;
+            padding: 0.25rem 0.8rem;
+            font-size: 0.8rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .hero-image {
+            flex: 1 1 260px;
+            text-align: center;
+        }
+
+        .hero-card {
+            background: #ffffff15;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #ffffff40;
+            display: inline-block;
+            min-width: 240px;
+        }
+
+        .hero-card h3 {
+            margin-bottom: 0.7rem;
+            font-size: 1.05rem;
+        }
+
+        .hero-card ul {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        .hero-card li {
+            margin-bottom: 0.3rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 2.8rem 0;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+
+        section h2::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background: #2e7d32;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            border-radius: 999px;
+        }
+
+        .section-subtitle {
+            font-size: 0.95rem;
+            color: #455a45;
+            margin-bottom: 1.1rem;
+        }
+
+        .two-col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .two-col>div {
+            flex: 1 1 260px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 1.4rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 0.6rem;
+            display: block;
+        }
+
+        .card h3 {
+            margin-bottom: 0.4rem;
+            font-size: 1.02rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8f5e9;
+            padding: 0.15rem 0.55rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Contact */
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .contact-details,
+        .contact-form {
+            flex: 1 1 280px;
+        }
+
+        .contact-item {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-item strong {
+            display: inline-block;
+            width: 90px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 0.6rem 0.7rem;
+            margin-bottom: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid #cfd8dc;
+            font-size: 0.95rem;
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        form button {
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #1b5e20;
+            color: #e8f5e9;
+            padding: 1.5rem 0;
+            font-size: 0.85rem;
+        }
+
+        footer .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.7rem;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+            }
+
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+
+            section h2 {
+                text-align: center;
+            }
+
+            section h2::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <div>
+                    <span>📍 At Kinkheda, Post Linga Kothval, Tal. Risod, Dist. Washim – 444504</span>
+                </div>
+                <div>
+                    <span>📞 9325131725</span>
+                    <span>✉ richlandcrop@gmail.com</span>
+                </div>
+            </div>
+            <nav>
+                <div class="logo">
+                    Richland <span>Crop Science</span>
+                </div>
+                <div class="nav-links">
+                    <a href="https://www.richlandcrop.com/files/report.pdf" target="_ blank">View Website</a>
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#bio">Bio Products</a>
+                    <a href="#about">About</a>
+                    <a href="#contact" class="btn-primary">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Richland Crop Science</h1>
+                <p>
+                    Trusted partner for <strong>Harbhara (Chickpea) seeds</strong>,
+                    <strong>quality agriculture inputs</strong> and
+                    <strong>bio-farm products</strong> for farmers in and around
+                    Risod, Washim.
+                </p>
+                <div class="hero-badges">
+                    <span class="badge">Harbhara &amp; other crop seeds</span>
+                    <span class="badge">Bio-fertilizers &amp; bio-pesticides</span>
+                    <span class="badge">Yield &amp; soil health focus</span>
+                </div>
+                <p>
+                    We help farmers get better yield with the right seed selection,
+                    timely crop care and high quality bio inputs.
+                </p>
+                <div class="hero-actions">
+                    <a href="tel:+919325131725" class="btn-primary">📞 Call Helpline: 9325131725</a>
+                    <a href="https://wa.me/919325131725" target="_blank" class="btn-primary"
+                        style="background:#ffffff; color:#1b5e20;">
+                        💬 WhatsApp Enquiry
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-card">
+                    <h3>Key Crop Focus</h3>
+                    <ul>
+                        <li>✔ Harbhara (Chickpea)</li>
+                        <li>✔ Soybean</li>
+                        <li>✔ Cotton</li>
+                        <li>✔ Wheat &amp; cereals</li>
+                        <li>✔ Oilseeds &amp; pulses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS: SEEDS & INPUTS -->
+    <section id="products">
+        <div class="container">
+            <h2>Curated Agriculture Products</h2>
+            <p class="section-subtitle">
+                Carefully selected seed and input range to support healthy crops and better yield for farmers.
+            </p>
+
+            <div class="card-grid">
+                <!-- Harbhara Seeds -->
+                <div class="card">
+                    <span class="tag">Seeds</span>
+                    <!-- Replace image URL with your real product photo -->
+                    <img src="" alt="Harbhara (Chickpea) seeds">
+                    <h3>Harbhara (Chickpea) Seeds</h3>
+                    <p>
+                        High-germination Harbhara seed varieties suitable for local soil and climate,
+                        focusing on better pod setting and grain quality.
+                    </p>
+                </div>
+
+                <!-- Soybean Seeds -->
+                <div class="card">
+                    <span class="tag">Seeds</span>
+                    <img src="c:\Users\MCM\Downloads\vedant 1.jfif" alt="Soybean seeds">
+                    <h3>Soybean Seeds</h3>
+                    <p>
+                        Selected soybean varieties with good oil content, lodging resistance and
+                        performance under local rainfall conditions.
+                    </p>
+                </div>
+
+                <!-- Cotton Seeds -->
+                <div class="card">
+                    <span class="tag">Seeds</span>
+                    <img src="https://via.placeholder.com/400x250?text=Cotton+Seeds" alt="Cotton seeds">
+                    <h3>Cotton Seeds</h3>
+                    <p>
+                        Cotton hybrids focused on boll size, fibre quality and pest tolerance, supporting
+                        better returns per acre.
+                    </p>
+                </div>
+
+                <!-- Plant Nutrients -->
+                <div class="card">
+                    <span class="tag">Nutrients</span>
+                    <img src="https://via.placeholder.com/400x250?text=Plant+Nutrients"
+                        alt="Plant nutrients and fertilizers">
+                    <h3>Plant Nutrients &amp; Micronutrients</h3>
+                    <p>
+                        Balanced macro and micro nutrient products to correct deficiencies and support
+                        uniform crop growth and green foliage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIO PRODUCTS -->
+    <section id="bio" style="background:#e8f5e9;">
+        <div class="container">
+            <h2>Bio Farm Products</h2>
+            <p class="section-subtitle">
+                Bio-fertilizers, bio-pesticides and plant growth promoters to protect crops and improve soil health.
+            </p>
+
+            <div class="two-col">
+                <div>
+                    <div class="card">
+                        <span class="tag">Bio-Fertilizer</span>
+                        <img src="https://via.placeholder.com/400x250?text=Bio+Fertilizer" alt="Bio fertilizer product">
+                        <h3>Bio-Fertilizers</h3>
+                        <p>
+                            Microbial based products that help in better nutrient availability, root development
+                            and long-term soil fertility improvement.
+                        </p>
+                        <ul style="margin-top:0.6rem; margin-left:1.1rem; font-size:0.9rem;">
+                            <li>✔ Rhizobium &amp; Azotobacter cultures</li>
+                            <li>✔ Phosphate solubilizing bacteria (PSB)</li>
+                            <li>✔ Mycorrhiza based products</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="margin-bottom:1rem;">
+                        <span class="tag">Bio-Pesticide</span>
+                        <img src="https://via.placeholder.com/400x250?text=Bio+Pesticide" alt="Bio pesticide product">
+                        <h3>Bio-Pesticides</h3>
+                        <p>
+                            Bio-based crop protection to manage sucking pests, caterpillars and fungal diseases
+                            with safer residue profile.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <span class="tag">Growth Promoter</span>
+                        <img src="https://via.placeholder.com/400x250?text=Growth+Promoter" alt="Plant growth promoter">
+                        <h3>Plant Growth Promoters</h3>
+                        <p>
+                            Seaweed extracts, amino acid mixes and organic plant tonics to improve flowering,
+                            fruit setting and overall crop vigour.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <h2>About Richland Crop Science</h2>
+            <div class="two-col">
+                <div>
+                    <p>
+                        Richland Crop Science is an agriculture-focused company based at
+                        <strong>Kinkheda, Post Linga Kothval, Tal. Risod, Dist. Washim</strong>.
+                        We work closely with farmers to provide the right seeds and bio inputs as per field needs.
+                    </p>
+                    <p style="margin-top:0.8rem;">
+                        Our aim is to support farmers with better planning, correct input usage and
+                        timely guidance so that every acre can deliver healthy, profitable crops.
+                    </p>
+                </div>
+                <div>
+                    <div class="card">
+                        <h3>What We Focus On</h3>
+                        <ul style="margin-top:0.6rem; margin-left:1.1rem; font-size:0.9rem;">
+                            <li>✔ Quality Harbhara and other crop seeds</li>
+                            <li>✔ Bio-farm solutions for soil and crop health</li>
+                            <li>✔ Support for sustainable and profitable farming</li>
+                            <li>✔ Practical guidance at village level</li>
+                            <li>✔ Long-term relationship with farmers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="background:#fffde7;">
+        <div class="container">
+            <h2>Contact &amp; Helpline</h2>
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <p>
+                        For product details, pricing and field-wise recommendation, contact us on helpline or WhatsApp.
+                    </p>
+
+                    <div class="contact-item">
+                        <strong>Address:</strong>
+                        <span>At Kinkheda, Post Linga Kothval,<br>Tal. Risod, Dist. Washim – 444504, Maharashtra</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Helpline:</strong>
+                        <a href="tel:+919325131725">9325131725</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:richlandcrop@gmail.com">richlandcrop@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/919325131725" target="_blank">Chat on WhatsApp</a>
+                    </div>
+
+                    <p style="margin-top:0.8rem; font-size:0.9rem;">
+                        Working hours: 9:00 AM – 7:00 PM (All days, except major festivals)
+                    </p>
+                </div>
+
+                <div class="contact-form">
+                    <!-- Simple email-based form: you can connect with backend later -->
+                    <form action="mailto:richlandcrop@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="tel" name="phone" placeholder="Mobile Number" required>
+                        <input type="text" name="village" placeholder="Village / Taluka (optional)">
+                        <textarea name="message"
+                            placeholder="Write your crop, area and requirement (seed / bio product / guidance)..."
+                            required></textarea>
+                        <button type="submit" class="btn-primary">Send Enquiry</button>
+                    </form>
+                    <p style="margin-top:0.5rem; font-size:0.8rem;">
+                        Note: This form opens your email app to send enquiry.
+                        For faster response, please call or WhatsApp directly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Richland Crop Science. All rights reserved.</div>
+            <div>Serving farmers around Risod &amp; Washim region.</div>
+        </div>
+    </footer>
+
+    <script>
+        // Auto year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
